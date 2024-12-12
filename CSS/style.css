@@ -1,0 +1,252 @@
+/* Importação dos tipos de letra do Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Doto:wght@100..900&family=Indie+Flower&family=Pacifico&family=Permanent+Marker&display=swap');
+
+@font-face {
+    font-family: 'aAttackGraffiti';
+    src: url('../fonts/aAttackGraffiti.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Reset das tags da página */
+/*Configuração geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Caveat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: darkorange;
+    font-size: 1em;
+    background: #000;
+    color: gold;
+    height: 1280px;
+    overflow-x: hidden;
+}
+
+#Matrix {
+    position: absolute;
+    object-fit: cover;
+    filter: brightness(0.5);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/*Configuração do Cabeçalho */
+
+.titulo {
+    font-family: "aAttackGraffiti", sans-serif;
+    color: rgba(128, 255, 0, 0.777);
+    font-size: 4.5em;
+    text-shadow:6px 6px 6px darkorange,
+     -4px -4px 1px darkorange;
+     z-index: 1;
+     text-align: center;
+}
+
+.redes-sociais button{
+    position:relative;
+    /* display: inline-block; */
+    padding: 15px 17px;
+    font-size: 2em;
+    color: chartreuse;
+    background-color: transparent;
+    border: none;
+    z-index: 1;
+}
+
+.btn-pulsante {
+    position:absolute;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Animação de pulsar */
+@keyframes pulsar {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.btn-pulsante:hover {
+    animation: pulsar 0.6s infinite; /* Duração e repetição da animação */
+}
+
+.logotipo {
+    /* position: absolute; */
+    display: inline-block;
+    background-color: transparent;
+    border-style: groove;
+    animation: animaContorno 3s infinite;
+    z-index: 1;
+}
+@keyframes animaContorno {
+    0%{
+        /* border-color: transparent; */
+        box-shadow: 2px 2px 2px rgba(128, 255, 0, 0), -2px -2px 2px rgba(128, 255, 0, 0);
+    }
+    50%{
+        /* border-color: chartreuse; */
+        box-shadow: 6px 6px 6px darkorange, -6px -6px 6px darkorange;
+        }
+    100%{
+        /* border-color: transparent; */
+        box-shadow: 2px 2px 2px rgba(128, 255, 0, 0.568), -2px -2px 2px rgba(128, 255, 0, 0.568);
+    }
+}
+
+.navbar { 
+    /* margin: 0 auto; */
+    border: 3px solid #222222;
+    padding: 5px;
+}
+
+.nav-link{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: darkorange;
+    font-size: 1.5em;
+    text-align: justify;
+}
+.nav-link{
+    &.active{
+        font-size: 1.5em;
+        text-align: justify;
+        text-shadow: 5px 5px 5px orangered;   
+    }
+}
+.nav-link:hover{
+    font-size: 2em;
+    text-align: justify;
+    text-shadow: 5px 5px 5px orangered;   
+}
+/*Configuração do Cabeçalho */
+
+
+
+
+/*Inicio da INTRO Seccion */
+.intro {
+    padding-top: 25px;
+    position: relative;
+}
+
+
+
+.cartao{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    width: 85vw;
+    background-color: transparent;
+    margin: 0 auto;
+    border: 5px solid rgba(218, 165, 32, 0.747); /* Borda opcional */
+    box-shadow: 8px 8px 8px rgb(11, 66, 11); /* Sombra opcional */   
+}
+.texto-cartao{
+    font-family: "Permanent Marker", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5em;
+    text-align: match-parent;
+    background: linear-gradient(to right, chartreuse,orangered, red);
+    background-clip: text;
+    color: transparent;
+    margin: 60px 4%;
+    z-index: 1;
+}
+/*Fim da INTRO Seccion */
+
+/*Inicio da PROJETOS Seccion */
+.projetos{
+    padding-top: 80px;
+    font-family: "aAttackGraffiti", sans-serif;
+    color: rgba(128, 255, 0, 0.777);
+    font-size: 4.5em;
+    text-shadow:6px 6px 6px darkorange,
+     -4px -4px 1px darkorange;
+     z-index: 1;
+     text-align: center;
+}
+
+.card{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    height: 30vh;
+    width: 95vw;
+    background-color: transparent;
+    margin: 0 auto;
+    border: 5px solid rgba(218, 165, 32, 0.747); /* Borda opcional */
+    box-shadow: 8px 8px 8px rgb(11, 66, 11); /* Sombra opcional */      
+    margin-top: 50px;
+    margin-left: 35px;
+}
+
+.card:hover img{
+    scale: 1;
+    translate: 0 10px;
+    box-shadow: 5px 5px 15px rgba(128, 255, 0, 0.555);
+    border-radius: 50px;
+}
+/*Fim da PROJETOS Seccion */
+
+
+/*Inicio da SOBRE-MIM Seccion */
+.sobre-mim{
+        padding-top: 80px;
+        font-family: "aAttackGraffiti", sans-serif;
+        color: rgba(128, 255, 0, 0.777);
+        font-size: 4.5em;
+        text-shadow:6px 6px 6px darkorange,
+         -4px -4px 1px darkorange;
+         z-index: 1;
+         text-align: center;
+}
+/*Fim da SOBRE MIM Seccion */
+
+/*Inicio do Rodape */
+.rodape{
+    padding-top: 80px;
+    font-family: "aAttackGraffiti", sans-serif;
+    color: rgba(128, 255, 0, 0.777);
+    font-size: 4.5em;
+    text-shadow:6px 6px 6px darkorange,
+     -4px -4px 1px darkorange;
+     z-index: 1;
+     text-align: center;
+}
+/*Fim da SOBRE MIM Seccion */
+
+@media screen and (max-width: 599px)
+{
+   
+}
+
+@media screen and (min-width: 600px)
+{
+    
+}
+
+
+@media screen and (min-width: 1900px)
+{
+    
+}
