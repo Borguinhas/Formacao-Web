@@ -6,18 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
     content="Olá! Sou Sérgio Silva. Explore meus projetos para conhecer meu trabalho e entre em contacto para mais informações!">
-  <link rel="shortcut icon" href="./img/miniLogo.png" type="image/x-icon">
+
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script defer src="./js/matrix.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="./CSS/style.css">
 
@@ -25,178 +30,275 @@
 
 </head>
 
-<body>
-  <!-- Teste CANVAS-->
-  <canvas id="Matrix"></canvas>
-  <header>
-    <!--Cabecalho-->
-    <div class="cabecalho row">
+<body class="index-page">
 
-      <!--Titulo da página-->
-      <div class="titulo col-md-9">
-        &nbsp;P&nbsp;O&nbsp;R&nbsp;T&nbsp;F&nbsp;O&nbsp;L&nbsp;I&nbsp;O&nbsp;
-      </div>
-      <!--Titulo da página-->
-
-      <!--Botões redes sociais-->
-      <div class="redes-sociais col-md-3">
-        <a href="https://wa.me/351916502995" target="_blank"><button><i
-              class="btn-pulsante bi bi-whatsapp"></i></button></a>
-        <a href="https://www.facebook.com/PTSergioSilva/" target="_blank"><button><i
-              class="bi bi-facebook btn-pulsante"></i></button></a>
-        <a href="https://www.linkedin.com/in/sergi0silva/" target="_blank"><button><i
-              class="bi bi-linkedin btn-pulsante"></i></button></a>
-        <a href="mailto:sergmsilv@gmail.com" target="_blank"><button><i
-              class="bi bi-envelope-at-fill btn-pulsante"></i></button></a>
-      </div><!--Botões redes sociais-->
-
+  <header id="header" class="header bg-black d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <div class="img-perfil">
+      <img src="./img/foto-perfil.jpg" alt="" class="img-fluid rounded-circle">
     </div>
-    <!--Cabecalho-->
-  </header>
-  <!--Barra de Navegação-->
-  <nav class="navbar sticky-top navbar-expand-md navbar-dark">
-    <a class="navbar-brand" href="#"><img class="logotipo" src="./img/miniLogo.png" alt="Logotipo"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId"
-      aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavId">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" href="#" aria-current="page">HOME</a>
-        </li><!--HOME-->
-        <li class="nav-item">
-          <a class="nav-link" href="#projetos">PROJETOS</a>
-        </li><!--PROJETOS-->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">SOBRE MIM</a>
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item" href="#compete">COMPETÊNCIAS</a>
-            </li><!--COMPETENCIAS-->
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li>
-              <a class="dropdown-item" href="#contacto">OBTER CV</a>
-            </li><!--OBTER CV-->
-          </ul>
-        </li><!--SOBRE MIM-->
+
+    <a href="#" class="logo d-flex align-items-center justify-content-center">
+      <img src="./img/Logo.png" alt="">
+      <h1 class="sitename"> Sérgio Silva </h1>
+    </a>
+
+    <!--Botões redes sociais-->
+    <div class="redes-sociais text-center">
+      <a href="https://wa.me/351916502995" target="_blank">
+        <i class="btn-pulsante bi bi-whatsapp"></i>
+      </a>
+      <a href="https://www.facebook.com/PTSergioSilva/" target="_blank">
+        <i class="bi bi-facebook btn-pulsante"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/sergi0silva/" target="_blank">
+        <i class="bi bi-linkedin btn-pulsante"></i>
+      </a>
+      <a href="mailto:sergmsilv@gmail.com" target="_blank">
+        <i class="bi bi-envelope-at-fill btn-pulsante"></i>
+      </a>
+    </div>
+    <!--Botões redes sociais-->
+
+    <!--Barra de Navegação-->
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a class="nav-link" href="#hero"><i class="bi bi-house navicon"></i> Home</a></li>
+        <li><a class="nav-link" href="#sobre"><i class="bi bi-person navicon"></i> Sobre</a></li>
+        <li><a class="nav-link" href="#curriculo"><i class="bi bi-file-earmark-text navicon"></i> Curriculo</a></li>
+        <li><a class="nav-link" href="#projetos"><i class="bi bi-images navicon"></i> Projetos</a></li>
+        <li><a class="nav-link" href="#competencias"><i class="bi bi-hdd-stack navicon"></i> Competencias</a></li>
+        <li><a class="nav-link" href="#contacto"><i class="bi bi-envelope navicon"></i> Contacto</a></li>
       </ul>
-    </div>
-  </nav>
-  <!--Barra de Navegação-->
+    </nav>
+    <!--Barra de Navegação-->
+  </header>
 
-  <!--Introdução-->
-  <div class="intro" id="intro">
-    <div class="cartao">
-      <div class="welcome">BEM VINDO</div>
-      <div class="texto-cartao">
-        Olá!!!<br>Muito obrigado pela visita.
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section bg-black">
+
+      <img src="./img/Matrix_bg.jpg" alt="" class="">
+
+      <div class="container">
+        <h2>Sérgio Silva</h2>
+        <p>Olá! Eu sou
+          <span class="typed" data-typed-items="Programador, Freelancer, Autodidata">
+            Programador
+          </span>
+          <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+          <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+        </p>
       </div>
-    </div>
-  </div>
-  <!--Introdução-->
+      <!-- Hero Section -->
+    </section>
+    <!--Projetos-->
+    <div id="projetos">
+      <p class="projetos">
+        PROJETOS
+      </p>
 
-  <!--Projetos-->
-  <div id="projetos">
-    <p class="projetos">
-      PROJETOS
-    </p>
-
-    <div class="card mb-3 bg-dark text-warning">
-      <div class="row g-0">
-        <div class="col-md-5">
-          <img src="./img/html-css.jpg" class="img-fluid rounded-pill" alt="logos html e css">
+      <div class="card mb-3 bg-dark text-warning">
+        <div class="row g-0">
+          <div class="col-md-5">
+            <img src="./img/html-css.jpg" class="img-fluid rounded-pill" alt="logos html e css">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h3 class="card-title">Projetos Webdesign</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque expedita ratione aut
+                laborum laudantium tempora aspernatur praesentium recusandae dicta quod maxime placeat voluptatum
+                consectetur pariatur eius, quam sequi laboriosam sit! </p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6">
-          <div class="card-body">
-            <h3 class="card-title">Projetos Webdesign</h3>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque expedita ratione aut
-              laborum laudantium tempora aspernatur praesentium recusandae dicta quod maxime placeat voluptatum
-              consectetur pariatur eius, quam sequi laboriosam sit! </p>
+      </div>
+
+      <div class="card mb-3 bg-dark text-warning">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <div class="card-body">
+              <h3 class="card-title">Projetos Python</h3>
+              <p class="card-text tipo-fonte1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque expedita
+                ratione aut laborum laudantium tempora aspernatur praesentium recusandae dicta quod maxime placeat
+                voluptatum consectetur pariatur eius, quam sequi laboriosam sit! </p>
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <img src="./img/python.jpg" class="img-fluid rounded-pill" style="width: 600px;" alt="logo python">
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 bg-dark text-warning">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <img src="./img/ling_C.jpg" class="img-fluid rounded-pill" style="width: 300px;" alt="logos programação c#">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h3 class="card-title">Projetos Webdesign</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque expedita ratione aut
+                laborum laudantium tempora aspernatur praesentium recusandae dicta quod maxime placeat voluptatum
+                consectetur pariatur eius, quam sequi laboriosam sit! </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <!--Projetos-->
 
-    <div class="card mb-3 bg-dark text-warning">
-      <div class="row g-0">
-        <div class="col-md-6">
-          <div class="card-body">
-            <h3 class="card-title">Projetos Python</h3>
-            <p class="card-text tipo-fonte1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque expedita
-              ratione aut laborum laudantium tempora aspernatur praesentium recusandae dicta quod maxime placeat
-              voluptatum consectetur pariatur eius, quam sequi laboriosam sit! </p>
+    <!--Competências-->
+    <div id="compete">
+      <p class="sobre-mim">
+        COMPETÊNCIAS
+      </p>
+      <div data-iframe-width="550" data-iframe-height="370" data-share-badge-id="d4506814-38fe-4cc5-8347-f5694811918d"
+        data-share-badge-host="https://www.credly.com"></div>
+    </div>
+    </div>
+    <!--Competências-->
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto section">
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h1>Contacto:</h1>
+        <p>Preencha a sua informação no formulário!</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5">
+            <div class="bloco-info">
+              <div class="info-item d-flex">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Morada</h3>
+                  <p>Rua São Pedro, Maceda</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Telemóvel</h3>
+                  <p>+351 91xxxxxxx</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p>sergmsilv@gmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24118.188387647893!2d-8.651335952267468!3d40.92071084504774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd23870a466f7ee7%3A0x84beae2165d9fea2!2sMaceda!5e0!3m2!1spt-PT!2spt!4v1734466315357!5m2!1spt-PT!2spt"
+                frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
           </div>
-        </div>
-        <div class="col-md-6 ">
-          <img src="./img/python.jpg" class="img-fluid rounded-pill" style="width: 600px;" alt="logo python">
-        </div>
-      </div>
-    </div>
-    <div class="card mb-3 bg-dark text-warning">
-      <div class="row g-0">
-        <div class="col-md-6">
-          <img src="./img/ling_C.jpg" class="img-fluid rounded-pill" style="width: 300px;" alt="logos programação c#">
-        </div>
-        <div class="col-md-6">
-          <div class="card-body">
-            <h3 class="card-title">Projetos Webdesign</h3>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque expedita ratione aut
-              laborum laudantium tempora aspernatur praesentium recusandae dicta quod maxime placeat voluptatum
-              consectetur pariatur eius, quam sequi laboriosam sit! </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--Projetos-->
 
-  <!--Sobre Mim-->
-  <div  id="compete">
-    <p class="sobre-mim">
-      COMPETÊNCIAS
-    </p>
-    <div data-iframe-width="550" data-iframe-height="370" data-share-badge-id="d4506814-38fe-4cc5-8347-f5694811918d" data-share-badge-host="https://www.credly.com"></div>
-    
-    <p class="sobre-mim">
-      CONTACTO
-    </p>
-    <div class="formulario bg-black text-white">
-      <div class="mb-3">
-        <label for="">Nome</label>
-        <input
-          type="text"
-          class="form-control"
-          name="nome"
-          id="frm_nome"
-          placeholder="Nome"
-        />
-      </div>
-      
-      <div class="mb-3">
-        <label for="" class="form-label">Email</label>
-        <input
-          type="email"
-          class="form-control"
-          name="email"
-          id="frm_email"
-          aria-describedby="emailHelpId"
-          placeholder="abc@mail.com"
-        />
-      </div>
-      
-    </div>
-  </div>
-  <!--Sobre Mim-->
+          <div class="col-lg-7">
+            <form action="https://api.staticforms.xyz/submit" method="post">
+              <div class="row gy-4">
+                <!-- CONFIGURAÇÕES PARA O FORMULÁRIO -->
+                <input type="hidden" name="accessKey" value="50facdcf-7739-47be-95ef-9bee33e37731">
+                <!--Chave de configuração-->
+                <input type="hidden" name="redirectTo" value="http://localhost:5501/html/resposta.html">
+                <!-- URL da página a ser re-direcionada após envio da informação-->
+                <input type="hidden" name="replyTo" value="@">
+                <input type="text" name="honeypot" style="display: none;">
+                <!-- FIM DAS CONFIGURAÇÕES PARA O FORMULÁRIO -->
 
-  <footer>
-    <div class="rodape">
-      Rodapé
+                <div class="col-md-6">
+                  <label for="nome" class="pb-2">Nome</label>
+                  <input type="text" name="$nome" id="nome" class="form-control" placeholder="Nome" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Email</label>
+                  <input type="email" class="form-control" name="$email" id="email" placeholder="seu_email@xxx.com"
+                    required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="floatingInput">Telefone:</label>
+                  <input type="tel" class="form-control" id="telefone" placeholder="Telefone/Telemóvel" name="$telefone"
+                    pattern="[0-9]{9}" required>
+                </div>
+
+                <div class="col-md-12">
+                  <label for="assunto" class="pb-2">Assunto</label>
+                  <input type="text" class="form-control" name="$assunto" id="assunto" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="mensagem" class="pb-2">Mensagem</label>
+                  <textarea class="form-control" name="$mensagem" rows="10" id="mensagem" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <button type="submit" class="btn btn-primary botao-enviar" value="submit">Enviar</button>
+                </div>
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- Contacto -->
+  </main>
+
+  <!--Rodape-->
+  <footer id="rodape" class="rodape position-relative">
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Sérgio Silva</strong> <span>All Rights Reserved</span>
+        </p>
+      </div>
+      <div class="credits">
+        UFCD 9963 - Edição Web
+      </div>
     </div>
+
   </footer>
-  <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+  <!--Rodape-->
+
+  <!-- Scroll Top -->
+  <a href="#" 
+    id="scroll-top"
+    class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-circle-fill"></i>
+  </a>
+
+
+  <!-- Scripts -->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous">
+  </script>
+  
+  <script 
+    src="./js/typed.js/typed.umd.js">
+  </script>
+
+  <script 
+    type="text/javascript" 
+    async src="//cdn.credly.com/assets/utilities/embed.js">
+  </script>
+
+  <script 
+    src="./js/utils.js">
+  </script>
+
 </body>
 
 </html>
