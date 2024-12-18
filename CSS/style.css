@@ -8,6 +8,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 /* Reset das tags da página */
 
 * {
@@ -20,12 +21,13 @@
 :root {
     scroll-behavior: smooth;
 }
+
 /*Configuração geral */
 body {
     color: gold;
     background-color: black;
     font-family: "DM Sans", sans-serif;
-  }
+}
 
 a {
     color: greenyellow;
@@ -41,11 +43,16 @@ a:hover {
     text-align: justify;
     color: chartreuse;
     text-decoration: none;
-    text-shadow: 5px 5px 5px orangered;   
+    text-shadow: 5px 5px 5px orangered;
 }
 
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: gold;
     font-family: "Pacifico", sans-serif;
 }
@@ -56,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 /*Configuração do Menu */
 .header {
     color: gold;
-    background-color:black;
+    background-color: black;
     position: fixed;
     top: 0;
     left: 0;
@@ -67,75 +74,75 @@ h1, h2, h3, h4, h5, h6 {
     overflow-y: auto;
     z-index: 997;
     border-right: 1px solid color-mix(in srgb, gold, transparent 90%);
-  }
-  
-  .header .img-perfil img {
+}
+
+.header .img-perfil img {
     margin: 15px auto;
     display: block;
     width: 120px;
     border: 8px solid color-mix(in srgb, gold, transparent 85%);
-  }
-  
-  .header .logo {
+}
+
+.header .logo {
     line-height: 1;
     margin-bottom: 15px;
-  }
-  
-  .header .logo img {
+}
+
+.header .logo img {
     max-height: 32px;
     margin-right: 8px;
     animation: animaContorno 3s infinite;
-  }
-  
-  .header .logo h1 {
+}
+
+.header .logo h1 {
     font-size: 40px;
     margin: 0;
     font-weight: 700;
     color: chocolate;
- }
+}
 
 @keyframes animaContorno {
-    0%{
+    0% {
         /* border-color: transparent; */
         box-shadow: 2px 2px 2px rgba(128, 255, 0, 0), -2px -2px 2px rgba(128, 255, 0, 0);
     }
-    50%{
+
+    50% {
         /* border-color: chartreuse; */
         box-shadow: 6px 6px 6px darkorange, -6px -6px 6px darkorange;
-        }
-    100%{
+    }
+
+    100% {
         /* border-color: transparent; */
         box-shadow: 2px 2px 2px rgba(128, 255, 0, 0.568), -2px -2px 2px rgba(128, 255, 0, 0.568);
     }
 }
-.header .redes-sociais{
+
+.header .redes-sociais {
     margin: 0 0 20px 0;
-    z-index: 997;
 }
 
-.header .redes-sociais a{
+.header .redes-sociais a {
     display: inline-flex;
     font-size: 24px;
     color: gold;
     align-items: center;
     justify-content: center;
-    /* background-color: color-mix(in srgb, gold, transparent 90%); */
     margin: 0 2px;
     border-radius: 50%;
     text-align: center;
     width: 50px;
     height: 50px;
     transition: 0.4s;
-    /* border: none; */
-    z-index: 997;
 }
 
 .header .redes-sociais a:hover {
     color: chartreuse;
     background: #000;
-  }
+}
+
 .btn-pulsante {
-    position:absolute;
+    position: absolute;
     transition: transform 0.2s ease-in-out;
 }
 
@@ -144,66 +151,41 @@ h1, h2, h3, h4, h5, h6 {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.3);
     }
+
     100% {
         transform: scale(1);
     }
 }
+
 .btn-pulsante:hover {
-    animation: pulsar 0.6s infinite; /* Duração e repetição da animação */
-}
-
-/* Efeito Matrix */
-#Matrix {
-    position: absolute;
-    object-fit: cover;
-    filter: brightness(0.5);
-    width: 100vw;
-    /* height: 200vh; */
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-
-/* Configuração do menu */
-.nav-link{
-    color: gold;
-    text-align: justify;
-    font-size: 20px;
-    transition: 0.4s;
-    text-decoration: none;
-}
-
-.nav-link:hover{
-    font-size: 24px;
-    font-weight: bold;
-    text-align: justify;
-    color: chartreuse;
-    text-shadow: 5px 5px 5px orangered;   
+    animation: pulsar 0.6s infinite;
+    /* Duração e repetição da animação */
 }
 
 @media (min-width: 1200px) {
 
     .header~main,
     .header~#footer {
-      margin-left: 300px;
+        margin-left: 300px;
     }
-  }
-  
-  @media (max-width: 1199px) {
+}
+
+@media (max-width: 1199px) {
     .header {
-      left: -100%;
+        left: -100%;
     }
-  }
+}
 
 
-  .header.header-show {
+.header .header-show {
     left: 0;
-  }
-  
-  .header .header-toggle {
+}
+
+.header .header-toggle {
     color: red;
     background-color: goldenrod;
     font-size: 22px;
@@ -219,30 +201,31 @@ h1, h2, h3, h4, h5, h6 {
     right: 15px;
     z-index: 9999;
     transition: background-color 0.3s;
-  }
-  
-  .header .header-toggle:hover {
+}
+
+.header .header-toggle:hover {
     color: red;
     background-color: color-mix(in srgb, goldenrod 90%, white 15%);
-  }
-  
+}
+
+/* Configuração do menu */
 .mobile-nav-toggle {
     display: none;
-  }
-  
-  .navmenu {
+}
+
+.navmenu {
     padding: 0;
     z-index: 9997;
-  }
-  
-  .navmenu ul {
+}
+
+.navmenu ul {
     list-style: none;
     padding: 0 0 20px 0;
     margin: 0;
-  }
-  
-  .navmenu a,
-  .navmenu a:focus {
+}
+
+.navmenu a,
+.navmenu a:focus {
     color: gold;
     padding: 15px 10px;
     font-family: "DM Sans", sans-serif;
@@ -253,16 +236,16 @@ h1, h2, h3, h4, h5, h6 {
     white-space: nowrap;
     transition: 0.3s;
     width: 100%;
-  }
-  
-  .navmenu a .navicon,
-  .navmenu a:focus .navicon {
+}
+
+.navmenu a .navicon,
+.navmenu a:focus .navicon {
     font-size: 20px;
     margin-right: 10px;
-  }
-  
-  .navmenu a .toggle-dropdown,
-  .navmenu a:focus .toggle-dropdown {
+}
+
+.navmenu a .toggle-dropdown,
+.navmenu a:focus .toggle-dropdown {
     font-size: 12px;
     line-height: 0;
     margin-left: auto;
@@ -275,83 +258,89 @@ h1, h2, h3, h4, h5, h6 {
     transition: 0.3s;
     flex-shrink: 0;
     background-color: color-mix(in srgb, goldenrod, transparent 90%);
-  }
-  
-  .navmenu a .toggle-dropdown:hover,
-  .navmenu a:focus .toggle-dropdown:hover {
+}
+
+.navmenu a .toggle-dropdown:hover,
+.navmenu a:focus .toggle-dropdown:hover {
     background-color: goldenrod;
     color: Red;
-  }
-  
-  .navmenu a:hover,
-  .navmenu .active,
-  .navmenu .active:focus {
+}
+
+.navmenu a:hover,
+.navmenu .active,
+.navmenu .active:focus {
     color: chartreuse;
-  }
-  
-  .navmenu a:hover .navicon,
-  .navmenu .active .navicon,
-  .navmenu .active:focus .navicon {
+    text-shadow: 5px 5px 5px orangered;
+}
+
+.navmenu a:hover .navicon,
+.navmenu .active .navicon,
+.navmenu .active:focus .navicon {
     color: goldenrod;
-  }
-  
-  .navmenu .active .toggle-dropdown,
-  .navmenu .active:focus .toggle-dropdown {
+    text-shadow: 5px 5px 5px orangered;
+}
+
+.navmenu .active .toggle-dropdown,
+.navmenu .active:focus .toggle-dropdown {
     background-color: goldenrod;
     color: Red;
     transform: rotate(180deg);
-  }
-  .navmenu .dropdown {
+}
+
+.navmenu .dropdown {
     display: block;
-  }
-  
-  .navmenu .dropdown a,
-  .navmenu .dropdown a:focus {
+}
+
+.navmenu .dropdown a,
+.navmenu .dropdown a:focus {
     color: Gold;
-  }
-  
-  .navmenu .dropdown a:hover,
-  .navmenu .dropdown .active,
-  .navmenu .dropdown .active:focus {
+}
+
+.navmenu .dropdown a:hover,
+.navmenu .dropdown .active,
+.navmenu .dropdown .active:focus {
     color: chartreuse;
-  }
-  
-  .navmenu .dropdown ul {
+    text-shadow: 5px 5px 5px orangered;
+}
+
+.navmenu .dropdown ul {
     position: static;
     display: none;
     z-index: 99;
     padding: 5px 10px;
     margin: 5px 10px;
-    background-color: #000;
+    background-color: darkslategray;
     border: 1px solid color-mix(in srgb, gold, transparent 90%);
     box-shadow: none;
     transition: all 0.5s ease-in-out;
-  }
-  
-  .navmenu .dropdown ul ul {
+}
+
+.navmenu .dropdown ul ul {
     background-color: rgba(33, 37, 41, 0.1);
-  }
-  
-  .navmenu .dropdown>.dropdown-active {
+}
+
+.navmenu .dropdown>.dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
-  }
+}
 
 /*Configuração do Menu*/
+
+
 
 /* Inicio Bloco contacto e mapa */
 .contacto .bloco-infos {
     background-color: black;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     padding: 30px;
-  }
-  
-  @media (max-width: 575px) {
+}
+
+@media (max-width: 575px) {
     .contacto .bloco-infos {
-      padding: 20px;
+        padding: 20px;
     }
-  }
-  
+}
+
 
 
 /* Fim Bloco contacto e mapa */
@@ -365,17 +354,17 @@ h1, h2, h3, h4, h5, h6 {
     padding: 40px 0;
     position: relative;
     border-top: 1px solid color-mix(in srgb, gold, transparent 90%);
-  }
-  
-  .rodape .copyright p {
+}
+
+.rodape .copyright p {
     margin-bottom: 0;
-  }
-  
-  .rodape .credits {
+}
+
+.rodape .credits {
     margin-top: 4px;
     font-size: 13px;
     text-align: center;
-  }
+}
 
 /*Fim Rodape*/
 
@@ -392,21 +381,21 @@ h1, h2, h3, h4, h5, h6 {
     height: 44px;
     border-radius: 50px;
     transition: all 0.4s;
-  }
-  
-  .scroll-top i {
+}
+
+.scroll-top i {
     font-size: 48px;
     color: Red;
     line-height: 0;
-  }
-  
-  .scroll-top:hover {
+}
+
+.scroll-top:hover {
     background-color: color-mix(in srgb, goldenrod, transparent 20%);
     color: Red;
-  }
-  
-  .scroll-top.active {
+}
+
+.scroll-top.active {
     visibility: visible;
     opacity: 1;
     bottom: 15px;
-  }
+}
