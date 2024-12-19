@@ -343,6 +343,29 @@ section,
   border-bottom: 2px solid goldenrod;
 }
 
+:root {
+    --cursor-color: white;
+}
+.escrever{
+    border-right: 1px solid var(--cursor-color);
+    animation:
+        piscar 1s steps(1, end) infinite, 
+        typing 4s steps(27, end);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@keyframes piscar {
+    0% { border-color: transparent}
+    50% {border-color: var(--cursor-color);}
+    100% { border-color: transparent}
+}
+
+@keyframes typing {
+    0% { width: 0 }
+    100% { width: 100% }
+}
+
 @media (max-width: 768px) {
     .hero h2 {
       font-size: 32px;
