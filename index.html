@@ -10,42 +10,36 @@
   <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
 
   <!-- Bootstrap-CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet"
-    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- CSS customizado -->
-  <link rel="stylesheet" href="./CSS/style.css">
+  <link href="./CSS/style.css" rel="stylesheet">
 
   <title>Portfólio de Sérgio Silva</title>
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script defer type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-
 </head>
 
-<body class="index-page">
+<body class="pagina-inicial">
 
-  <header id="header" class="header bg-black d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
+  <header id="header" class="header">
     <div class="img-perfil">
       <img src="./img/foto-perfil.jpg" alt="" class="img-fluid rounded-circle">
     </div>
 
-    <a href="#" class="logo d-flex align-items-center justify-content-center">
+    <a href="" class="logo d-flex align-items-center justify-content-center">
       <img src="./img/Logo.png" alt="">
-      <h1 class="sitename"> Sérgio Silva </h1>
+      <h1 class="sitename">érgio Silva </h1>
     </a>
 
     <!--Botões redes sociais-->
@@ -66,63 +60,49 @@
     <!--Botões redes sociais-->
 
     <!--Barra de Navegação-->
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#" class="active"><i class="bi bi-house navicon"></i> Home</a></li>
-        <li><a href="#sobre"><i class="bi bi-person navicon"></i> Sobre</a></li>
-        <li><a href="#curriculo"><i class="bi bi-file-earmark-text navicon"></i> Curriculo</a></li>
-        <li><a href="#competencias"><i class="bi bi-hdd-stack navicon"></i> Competencias</a></li>
-        <li><a href="#projetos"><i class="bi bi-images navicon"></i> Projetos</a></li>
-        <li><a href="#contacto"><i class="bi bi-envelope navicon"></i> Contacto</a></li>
-        <li class="dropdown">
-          <a href="#">
-            <i class="bi bi-menu-button navicon"></i> <span>Dropdown</span>
-            <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
-            <li><a href="#">Dropdown 1</a></li>
-            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                  class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Deep Dropdown 1</a></li>
-                <li><a href="#">Deep Dropdown 2</a></li>
-                <li><a href="#">Deep Dropdown 3</a></li>
-                <li><a href="#">Deep Dropdown 4</a></li>
-                <li><a href="#">Deep Dropdown 5</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Dropdown 2</a></li>
-            <li><a href="#">Dropdown 3</a></li>
-            <li><a href="#">Dropdown 4</a></li>
-          </ul>
-        </li>
-      </ul>
+    <nav id="navmenu" class="navbar navmenu navbar-expand-lg">
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="#"></a> -->
+        <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav mx-auto">
+            <a class="nav-link" href="#hero"><i class="bi bi-house navicon"></i> Home</a>
+            <a class="nav-link" href="#sobre"><i class="bi bi-person navicon"></i> Sobre</a>
+            <a class="nav-link" href="#competencias"><i class="bi bi-hdd-stack navicon"></i> Competencias</a>
+            <a class="nav-link" href="#projetos"><i class="bi bi-images navicon"></i> Projetos</a>
+            <a class="nav-link" href="#contacto"><i class="bi bi-envelope navicon"></i> Contacto</a>
+            <a class="nav-link disabled text-light" aria-disabled="true"><i class="bi bi-file-earmark-text navicon"></i>
+              Curriculo</a>
+          </div>
+        </div>
+      </div>
     </nav>
     <!--Barra de Navegação-->
   </header>
 
   <main class="main">
-    <!-- Intro -->
+    <!-- Hero Section -->
     <section id="hero" class="hero section">
+
+      <img src="./img/Matrix_bg.jpg" alt="" class="fundo">
+
       <div class="container">
-        <h1>Titulo</h1>
-        <h4>Sub-título</h4>
-        <p>ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem perferendis, impedit earum laboriosam illum
-          culpa id cumque, odit nemo ratione iure amet facilis quod beatae. Voluptatem harum vitae incidunt quos.</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quia suscipit quaerat eligendi. Perspiciatis
-          quidem ex ipsum molestiae, a neque fugiat ratione ipsam consequuntur asperiores animi porro dolore sunt
-          delectus.</p>
+        <h2 class="titulo-pagina">Sérgio Silva</h2>
+        <p class="subtitulo-pagina">Bem vindo á minha página.</p>
       </div>
-    </section>
-    <!-- Intro -->
+
+    </section><!-- /Hero Section -->
 
     <!-- Sobre -->
     <section id="sobre" class="sobre section">
 
-      <!-- Section Title -->
       <div class="container section-title">
         <h2>Sobre Mim</h2>
-        <p>------------------</p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container">
 
@@ -131,7 +111,7 @@
             <img src="./img/foto-perfil.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 content">
-            <h2>Programador &amp; Web Developer.</h2>
+            <h2>Programador &amp; Web Developer</h2>
             <p class="fst-italic py-3">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore
@@ -171,28 +151,30 @@
     <!-- Competências -->
     <section id="competencias" class="skills section">
 
-      <!-- Section Title -->
       <div class="container section-title">
         <h2>Competências</h2>
-        <p>---------------------</p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container">
 
-        <div class="row skills-content skills-animation">
+        <div class="row-gap-lg-6">
 
           <div class="col-lg-8">
 
-            <div data-iframe-width="390" data-iframe-height="270"
-              data-share-badge-id="ab49e927-3a77-4225-8d1c-c369dca08ffc" data-share-badge-host="https://www.credly.com">
+            <div data-iframe-width="150" data-iframe-height="270"
+              data-share-badge-id="d4506814-38fe-4cc5-8347-f5694811918d" data-share-badge-host="https://www.credly.com">
             </div>
 
-            <div data-iframe-width="390" data-iframe-height="270"
+            <div data-iframe-width="150" data-iframe-height="270"
               data-share-badge-id="42014ca4-6bf4-43ef-b66c-24aee8f593a7" data-share-badge-host="https://www.credly.com">
             </div>
 
-            <div data-iframe-width="390" data-iframe-height="270"
+            <div data-iframe-width="150" data-iframe-height="270"
               data-share-badge-id="ab49e927-3a77-4225-8d1c-c369dca08ffc" data-share-badge-host="https://www.credly.com">
+            </div>
+
+            <div data-iframe-width="150" data-iframe-height="270"
+              data-share-badge-id="b76f1ee5-fb15-4a68-99d3-89fd145981ea" data-share-badge-host="https://www.credly.com">
             </div>
           </div>
         </div>
@@ -203,15 +185,18 @@
     <!-- Competências -->
 
     <!--Projetos-->
-    <div id="projetos">
-      <p class="projetos">
-        PROJETOS
-      </p>
+    <section id="projetos" class="projetos section">
 
-      <div class="card mb-3 bg-dark text-warning">
-        <div class="row g-0">
-          <div class="col-md-5">
-            <img src="./img/html-css.jpg" class="img-fluid rounded-pill" alt="logos html e css">
+      <div class="container section-title">
+        <h2>Projetos</h2>
+      </div>
+
+      <div class="card mb-3">
+        <div class="row-gap-0">
+          <div class="col-md-6">
+            <a href="html/proj-web.html" target="_blank" rel="noopener noreferrer">
+              <img src="./img/html-css.jpg" class="img-fluid rounded-pill" alt="logos html e css">
+            </a>
           </div>
           <div class="col-md-6">
             <div class="card-body">
@@ -224,8 +209,8 @@
         </div>
       </div>
 
-      <div class="card mb-3 bg-dark text-warning">
-        <div class="row g-0">
+      <div class="card mb-3">
+        <div class="row gap-0">
           <div class="col-md-6">
             <div class="card-body">
               <h3 class="card-title">Projetos Python</h3>
@@ -234,15 +219,20 @@
                 voluptatum consectetur pariatur eius, quam sequi laboriosam sit! </p>
             </div>
           </div>
-          <div class="col-md-6 ">
-            <img src="./img/python.jpg" class="img-fluid rounded-pill" style="width: 600px;" alt="logo python">
+          <div class="col-md-6">
+            <a href="html/proj-python.html" target="_blank" rel="noopener noreferrer">
+              <img src="./img/python.jpg" class="img-fluid rounded-pill" alt="logos html e css">
+            </a>
           </div>
         </div>
       </div>
-      <div class="card mb-3 bg-dark text-warning">
+
+      <div class="card mb-3">
         <div class="row g-0">
           <div class="col-md-6">
-            <img src="./img/ling_C.jpg" class="img-fluid rounded-pill" style="width: 300px;" alt="logos programação c#">
+            <a href="html/proj-c.html" target="_blank" rel="noopener noreferrer">
+              <img src="./img/ling_C.jpg" class="img-fluid rounded-pill" alt="logos html e css">
+            </a>
           </div>
           <div class="col-md-6">
             <div class="card-body">
@@ -254,15 +244,16 @@
           </div>
         </div>
       </div>
-    </div>
+
+    </section>
     <!--Projetos-->
 
     <!-- Contacto -->
     <section id="contacto" class="contacto section">
       <!-- Section Title -->
       <div class="container section-title">
-        <h1>Contacto:</h1>
-        <p>Preencha a sua informação no formulário!</p>
+        <h2>Contacto:</h2>
+        <h3>Preencha a sua informação no formulário!</h3>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -358,7 +349,7 @@
   <footer id="rodape" class="rodape position-relative">
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Sérgio Silva</strong> <span>All Rights Reserved</span>
+        <p>© <span>Copyright</span> <strong class="px-1">Sérgio Silva</strong> <span>EISNT</span>
         </p>
       </div>
       <div class="credits">
@@ -374,7 +365,14 @@
       class="bi bi-arrow-up-circle-fill"></i></a>
 
   <!-- Scripts -->
-  <script src="./js/utils.js"></script>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script defer type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+  <script src="./js/header.js"></script>
 
 </body>
 
